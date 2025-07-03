@@ -138,12 +138,8 @@ tr:hover {
     font-weight: bold;
 }
 .edit-btn {
-    border-radius: 4px;
     cursor: pointer;
     border: none;
-    color: white;
-    padding: 10px;
-    background-color: navy;
 }
 .submit-btn {
     border-radius: 4px;
@@ -162,12 +158,8 @@ tr:hover {
     background-color: #706f6f;
 }
 .delete-btn {
-    border-radius: 4px;
     cursor: pointer;
     border: none;
-    color: white;
-    padding: 10px;
-    background-color: red;
 }
 .pagination {
     display: flex;
