@@ -14,7 +14,8 @@
                 <input type="file" name="file" id="file" class="file_upload_btn">
                 <button type="submit">File upload</button>
             </form>
-            <div id="upload-result"></div>
+            <div id="upload-result">
+            </div>
         </div>
 
         <div id="currency-section" class="currency-section">
@@ -59,7 +60,26 @@
         <h2>List of bank accounts</h2>
         <div class="container" id="crud-app">
             <div class="pagination_wrapper">
+                <div id="per-page">
+                    <label for="limit">Show</label>
+                    <select id="limit" class="select-box">
+                        <option value="5">5</option>
+                        <option value="10" selected>10</option>
+                        <option value="20">20</option>
+                        <option value="50">50</option>
+                    </select>
+                    <span>entries</span>
+                </div>
                 <div id="pagination" class="pagination"></div>
+            </div>
+            <div class="export-wrapper">
+                <label>
+                    Export full table
+                </label>
+                <div>
+                    <button type="button" id="export-excel" class="export-btn">Excel</button>
+                    <button type="button" id="export-pdf" class="export-btn">PDF</button>
+                </div>
             </div>
             <table id="data-table">
                 <thead>
@@ -93,7 +113,7 @@
                         <input type="date" id="edit-date" class="form-control" pattern="\d{4}-\d{2}-\d{2}" />
                     </div>
                     <div class="gap-2">
-                        <button type="submit" id="submit" class="edit-btn">Сохранить</button>
+                        <button type="submit" id="submit" class="submit-btn">Сохранить</button>
                         <button type="button" id="edit-cancel" class="edit-cancel">Отмена</button>
                     </div>
                 </form>
@@ -104,6 +124,10 @@
     </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="resource/js/app.js"></script>
+<script type="module" src="resource/js/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+
 </body>
 </html>

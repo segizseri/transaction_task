@@ -59,6 +59,11 @@ class TransactionController
         return $this->model->getAll();
     }
 
+    public function getData()
+    {
+        echo json_encode($this->getAllData());
+    }
+
     /**
      * @throws Exception
      */

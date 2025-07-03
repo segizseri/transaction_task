@@ -20,6 +20,8 @@ if (isset($_GET['action']) && $_GET['action'] === 'upload') {
     $controller->deleteRecord();
 } elseif (isset($_GET['action']) && $_GET['action'] === 'updateRecord') {
     $controller->updateRecord();
+} elseif (isset($_GET['action']) && $_GET['action'] === 'getAllData') {
+    $controller->getData();
 } elseif (isset($_GET['action']) && strpos($_GET['action'], 'loadData') !== false) {
     $controller->loadData();
 } else {

@@ -145,6 +145,14 @@ tr:hover {
     padding: 10px;
     background-color: navy;
 }
+.submit-btn {
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    padding: 10px;
+    background-color: #63a653;
+}
 .edit-cancel {
     border-radius: 4px;
     cursor: pointer;
@@ -168,8 +176,10 @@ tr:hover {
     right: 50px;
 }
 .pagination_wrapper {
-    position: relative;
-    padding: 5px 0px 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px 40px 20px;
 }
 .pagination a {
     padding: 6px 12px;
@@ -189,6 +199,10 @@ tr:hover {
 
 .pagination a:hover:not(.active) {
     background-color: #e9ecef;
+}
+.select-box {
+    padding: 4px;
+    border-radius: 4px;
 }
 .modal {
     display:none;
@@ -288,8 +302,6 @@ tr:hover {
     background-color: #5c636a;
     border-color: #565e64;
 }
-
-/* Flex контейнер для кнопок */
 .d-flex {
     display: flex;
 }
@@ -300,4 +312,18 @@ tr:hover {
 
 .gap-2 {
     gap: 0.5rem;
+}
+.export-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    color: #5c636a;
+    align-items: center;
+    padding: 5px;
+}
+.export-wrapper label {
+    margin-right: 20px;
+}
+.export-btn {
+    padding: 5px;
+    cursor: pointer;
 }
